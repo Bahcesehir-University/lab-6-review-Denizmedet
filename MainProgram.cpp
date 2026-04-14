@@ -126,7 +126,7 @@ public:
            temp[i] = toupper(temp[i]);
        }
         // YOUR CODE HERE
-        return "";
+        return temp;
     }
 
     // ----- Task 5: Operator Overloading -----
@@ -136,7 +136,7 @@ public:
     bool operator==(const Student& other) const {
         return id == other.id;
         // YOUR CODE HERE
-        return false;
+       
     }
 
     // TODO 5b: Less-than operator (<)
@@ -144,7 +144,7 @@ public:
     bool operator<(const Student& other) const {
         return gpa < other.gpa;
         // YOUR CODE HERE
-        return false;
+       
     }
 
     // TODO 5c: Stream insertion operator (<<)
@@ -175,7 +175,7 @@ Student findBestStudent(const Student& a, const Student& b) {
 Student findBestStudent(Student arr[], int size) {
     // YOUR CODE HERE
     Student best = arr[0];
-    for(int i = 1; i < size;){
+    for(int i = 1; i < size;i++){
         if(arr[i].getGpa() > best.getGpa()){
             best = arr[i];
         }
