@@ -66,7 +66,7 @@ public:
     // TODO 1d: Destructor
     // Print: "Student [name] destroyed"
     ~Student() {
-        cout << "Student" << name << "destroyed";
+        cout << "Student " << name << " destroyed\n";
         // YOUR CODE HERE
     }
 
@@ -175,7 +175,7 @@ Student findBestStudent(const Student& a, const Student& b) {
 Student findBestStudent(Student arr[], int size) {
     // YOUR CODE HERE
     Student best = arr[0];
-    for(int i = 1; i < size;i++){
+    for(int i = 1; i < size; i++){
         if(arr[i].getGpa() > best.getGpa()){
             best = arr[i];
         }
